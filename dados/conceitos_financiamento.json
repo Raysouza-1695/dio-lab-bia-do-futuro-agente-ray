@@ -1,0 +1,51 @@
+{
+  "juros": {
+    "definicao": "Juros são o custo do dinheiro ao longo do tempo. É o valor pago ao credor pelo uso do capital emprestado.",
+    "explicacao_simples": "É como um 'aluguel' que você paga por usar o dinheiro do banco.",
+    "exemplo": "Se você pega R$ 1.000 emprestado com juros de 2% ao mês, no primeiro mês você pagará R$ 20 de juros.",
+    "observacao": "Os juros são maiores no início do financiamento, principalmente no sistema PRICE."
+  },
+  "amortizacao": {
+    "definicao": "Amortização é a parte da parcela que realmente reduz a dívida (saldo devedor).",
+    "explicacao_simples": "É o valor que você paga para diminuir o que ainda deve.",
+    "exemplo": "Se sua parcela é R$ 500 e R$ 200 são juros, então R$ 300 são amortização.",
+    "tipos": {
+      "SAC": "A amortização é fixa em todas as parcelas.",
+      "PRICE": "A amortização começa menor e aumenta ao longo do tempo."
+    }
+  },
+  "saldo_devedor": {
+    "definicao": "Saldo devedor é o valor que ainda falta pagar do financiamento.",
+    "explicacao_simples": "É o quanto você ainda deve ao banco.",
+    "exemplo": "Se você pegou R$ 10.000 e já amortizou R$ 2.000, seu saldo devedor é R$ 8.000.",
+    "observacao": "Os juros são sempre calculados com base no saldo devedor atual."
+  },
+  "parcela": {
+    "definicao": "Parcela é o valor pago periodicamente (geralmente mensalmente) para quitar o financiamento.",
+    "composicao": "A parcela é formada por juros + amortização.",
+    "tipos": {
+      "SAC": "Parcelas decrescentes ao longo do tempo.",
+      "PRICE": "Parcelas fixas durante todo o financiamento."
+    }
+  },
+  "sistemas_de_amortizacao": {
+    "SAC": {
+      "nome": "Sistema de Amortização Constante",
+      "caracteristicas": [
+        "Amortização fixa",
+        "Parcelas decrescentes",
+        "Menor custo total de juros"
+      ],
+      "indicado_para": "Pessoas que podem pagar parcelas mais altas no início."
+    },
+    "PRICE": {
+      "nome": "Sistema Francês de Amortização",
+      "caracteristicas": [
+        "Parcelas fixas",
+        "Juros mais altos no início",
+        "Maior custo total de juros"
+      ],
+      "indicado_para": "Pessoas que preferem previsibilidade no valor das parcelas."
+    }
+  }
+}
