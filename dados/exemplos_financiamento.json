@@ -84,7 +84,7 @@
     "conclusao": "O sistema SAC tem menor custo total de juros, enquanto o PRICE oferece parcelas fixas mais previsíveis."
   },
 
-  "exemplo_4_situacao_real": {
+  "exemplo_4_situacao_fictícia": {
     "descricao": "Simulação de financiamento de veículo",
     "dados": {
       "valor_financiado": 30000,
