@@ -1,0 +1,105 @@
+{
+  "exemplo_1_price": {
+    "descricao": "Financiamento utilizando o sistema PRICE (parcelas fixas)",
+    "dados": {
+      "valor_financiado": 10000,
+      "taxa_juros_mensal": 0.02,
+      "prazo_meses": 12,
+      "valor_parcela": 945.60
+    },
+    "explicacao": "No sistema PRICE, o valor da parcela permanece fixo durante todo o financiamento.",
+    "detalhamento": [
+      {
+        "parcela": 1,
+        "juros": 200.00,
+        "amortizacao": 745.60,
+        "saldo_devedor": 9254.40
+      },
+      {
+        "parcela": 6,
+        "juros": 122.40,
+        "amortizacao": 823.20,
+        "saldo_devedor": 5296.67
+      },
+      {
+        "parcela": 12,
+        "juros": 18.54,
+        "amortizacao": 927.06,
+        "saldo_devedor": 0.00
+      }
+    ],
+    "insight": "No início você paga mais juros e menos amortização. Com o tempo, isso se inverte."
+  },
+
+  "exemplo_2_sac": {
+    "descricao": "Financiamento utilizando o sistema SAC (parcelas decrescentes)",
+    "dados": {
+      "valor_financiado": 10000,
+      "taxa_juros_mensal": 0.02,
+      "prazo_meses": 12,
+      "amortizacao_fixa": 833.33
+    },
+    "explicacao": "No sistema SAC, a amortização é fixa, fazendo com que as parcelas diminuam ao longo do tempo.",
+    "detalhamento": [
+      {
+        "parcela": 1,
+        "valor_parcela": 1033.33,
+        "juros": 200.00,
+        "saldo_devedor": 9166.67
+      },
+      {
+        "parcela": 6,
+        "valor_parcela": 950.00,
+        "juros": 116.67,
+        "saldo_devedor": 5000.02
+      },
+      {
+        "parcela": 12,
+        "valor_parcela": 850.00,
+        "juros": 16.67,
+        "saldo_devedor": 0.00
+      }
+    ],
+    "insight": "As parcelas começam maiores, mas diminuem ao longo do tempo, e o total de juros pagos é menor."
+  },
+
+  "exemplo_3_comparacao": {
+    "descricao": "Comparação entre SAC e PRICE",
+    "cenario": {
+      "valor_financiado": 10000,
+      "taxa_juros_mensal": 0.02,
+      "prazo_meses": 12
+    },
+    "price": {
+      "parcela_fixa": 945.60,
+      "total_pago": 11347.20,
+      "total_juros": 1347.20
+    },
+    "sac": {
+      "parcela_inicial": 1033.33,
+      "parcela_final": 850.00,
+      "total_pago": 11200.00,
+      "total_juros": 1200.00
+    },
+    "conclusao": "O sistema SAC tem menor custo total de juros, enquanto o PRICE oferece parcelas fixas mais previsíveis."
+  },
+
+  "exemplo_4_situacao_real": {
+    "descricao": "Simulação de financiamento de veículo",
+    "dados": {
+      "valor_financiado": 30000,
+      "taxa_juros_mensal": 0.018,
+      "prazo_meses": 24
+    },
+    "price": {
+      "parcela_aproximada": 1500.00,
+      "vantagem": "Parcelas fixas facilitam o planejamento financeiro"
+    },
+    "sac": {
+      "parcela_inicial_aproximada": 1750.00,
+      "parcela_final_aproximada": 1300.00,
+      "vantagem": "Menor pagamento de juros no total"
+    },
+    "explicacao": "Esse exemplo ajuda o usuário a entender como escolher entre SAC e PRICE na vida real."
+  }
+}
